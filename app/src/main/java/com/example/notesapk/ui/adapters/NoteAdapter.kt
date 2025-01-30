@@ -1,5 +1,6 @@
 package com.example.notesapk.ui.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -16,9 +17,19 @@ class NoteAdapter(
     class NoteViewHolder(private val binding: ItemNoteBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: NoteModel) {
+            binding.dateItem.text = item.date
             binding.txtTitle.text = item.title
             binding.txtText.text = item.description
-            binding.root.setBackgroundColor(item.color)
+            binding.root.setCardBackgroundColor(item.color)
+            if(item.color == Color.BLACK){
+                binding.txtTitle.setTextColor(Color.WHITE)
+                binding.txtText.setTextColor(Color.WHITE)
+                binding.dateItem.setTextColor(Color.WHITE)
+            }else{
+                binding.txtTitle.setTextColor(Color.BLACK)
+                binding.txtText.setTextColor(Color.BLACK)
+                binding.dateItem.setTextColor(Color.BLACK)
+            }
         }
     }
 

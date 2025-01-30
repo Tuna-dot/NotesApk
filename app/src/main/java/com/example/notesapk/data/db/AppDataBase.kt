@@ -1,6 +1,5 @@
 package com.example.notesapk.data.db
 
-import android.graphics.Color
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.example.notesapk.data.db.daos.NoteDao

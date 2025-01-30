@@ -87,21 +87,26 @@ class NoteDetailFragment : Fragment() {
 
     private fun setupListener() = with(binding) {
         btnOk.setOnClickListener {
+            date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date())
             val etTitle = title.text.toString()
             val etText = text.text.toString()
             if (noteId != -1) {
-                val upDateNote = NoteModel(etTitle, etText, color = selectedColor, date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date()))
+                val upDateNote = NoteModel(etTitle, etText, color = selectedColor, date = date.toString())
                 upDateNote.id = noteId
                 App.appDataBase?.noteDao()?.update(upDateNote)
             } else {
-                App.appDataBase?.noteDao()?.insert(NoteModel(title = etTitle, description = etText, color = selectedColor, date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date())))
+                App.appDataBase?.noteDao()?.insert(NoteModel(title = etTitle, description = etText, color = selectedColor, date = date.toString()))
             }
             findNavController().navigateUp()
         }
         btnBack.setOnClickListener {
             val etTitle = title.text.toString()
             val etText = text.text.toString()
-            App.appDataBase?.noteDao()?.insert(NoteModel(title = etTitle, description = etText, color = selectedColor, date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date())))
+            date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date())
+            if (etTitle.isEmpty() && etText.isEmpty() && noteId != -1 ){
+
+                App.appDataBase?.noteDao()?.insert(NoteModel(title = etTitle, description = etText, color = selectedColor, date = date.toString()))
+            }
             findNavController().navigateUp()
         }
         menuColor.setOnClickListener {

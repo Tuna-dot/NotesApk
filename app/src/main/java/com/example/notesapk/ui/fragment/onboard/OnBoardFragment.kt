@@ -29,12 +29,6 @@ class OnBoardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         sharedPreferences.unit(requireContext())
-
-        if (sharedPreferences.onBoard) {
-            findNavController().navigate(OnBoardFragmentDirections.actionOnBoardFragmentToNoteFragment())
-            return
-        }
-
         initialze()
         setupListeners()
         setupDotsIndicator()
@@ -54,7 +48,7 @@ class OnBoardFragment : Fragment() {
                     binding?.txtSkip?.visibility = View.INVISIBLE
                     binding?.btnStart?.setOnClickListener {
                         sharedPreferences.onBoard = true
-                        findNavController().navigate(OnBoardFragmentDirections.actionOnBoardFragmentToNoteFragment())
+                        findNavController().navigate(OnBoardFragmentDirections.actionOnBoardFragmentToAuthFragment())
 
                     }
                 }else{
@@ -69,7 +63,7 @@ class OnBoardFragment : Fragment() {
     }
     private fun setupDotsIndicator() {
         binding?.viewPager?.let { viewPager ->
-                binding?.dotsIndicator?.setViewPager2(viewPager)
+            binding?.dotsIndicator?.attachTo(viewPager)
          }
     }
 }

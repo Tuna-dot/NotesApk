@@ -11,8 +11,8 @@
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board">
         <action
-            android:id="@+id/action_onBoardFragment_to_noteFragment"
-            app:destination="@id/noteFragment"
+            android:id="@+id/action_onBoardFragment_to_authFragment"
+            app:destination="@id/authFragment"
             app:popUpTo="@id/onBoardFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -40,5 +40,16 @@
         tools:layout="@layout/fragment_note_detail" >
         <argument android:name="noteId"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.notesapk.ui.fragment.singin.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_authFragment_to_noteFragment"
+            app:destination="@+id/noteFragment"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

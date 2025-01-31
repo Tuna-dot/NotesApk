@@ -1,16 +1,13 @@
 package com.example.notesapk
 
 import android.app.Application
-import android.graphics.Color
 import androidx.room.Room
-import androidx.room.migration.Migration
-import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.notesapk.data.db.AppDataBase
 import com.example.notesapk.utils.PreferenceHelper
 
-class App: Application() {
+class App : Application() {
 
-    companion object{
+    companion object {
         var appDataBase: AppDataBase? = null
 
     }
@@ -24,8 +21,8 @@ class App: Application() {
 
     private fun getInstance(): AppDataBase? {
 
-        if (appDataBase == null){
-            appDataBase = applicationContext.let {context ->
+        if (appDataBase == null) {
+            appDataBase = applicationContext.let { context ->
                 Room.databaseBuilder(
                     context,
                     AppDataBase::class.java,

@@ -17,6 +17,7 @@ import com.example.notesapk.App
 import com.example.notesapk.R
 import com.example.notesapk.data.models.NoteModel
 import com.example.notesapk.databinding.FragmentNoteBinding
+import com.example.notesapk.ui.activity.MainActivity
 import com.example.notesapk.ui.adapters.NoteAdapter
 import com.example.notesapk.ui.interfaces.onClickItem
 import com.example.notesapk.utils.PreferenceHelper
@@ -74,6 +75,10 @@ class NoteFragment : Fragment(), onClickItem {
         // Переключаем макет при нажатии на ImageView с id "layout_manager"
         layoutManager.setOnClickListener {
             toggleLayoutManager()
+        }
+
+        drawerMenu.setOnClickListener{
+            (activity as? MainActivity)?.openDrawer()
         }
     }
 

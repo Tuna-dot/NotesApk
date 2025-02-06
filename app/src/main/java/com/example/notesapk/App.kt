@@ -2,8 +2,8 @@ package com.example.notesapk
 
 import android.app.Application
 import androidx.room.Room
-import com.example.notesapk.data.db.AppDataBase
-import com.example.notesapk.utils.PreferenceHelper
+import com.example.notesapk.model.data.db.AppDataBase
+import com.example.notesapk.model.data.utils.PreferenceHelper
 
 class App : Application() {
 

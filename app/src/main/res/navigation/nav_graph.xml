@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/onBoardFragment"
-        android:name="com.example.notesapk.ui.fragment.onboard.OnBoardFragment"
+        android:name="com.example.notesapk.view.ui.fragment.onboard.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board">
         <action
@@ -18,13 +18,13 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardPagerFragment"
-        android:name="com.example.notesapk.ui.fragment.onboard.OnBoardPagerFragment"
+        android:name="com.example.notesapk.view.ui.fragment.onboard.OnBoardPagerFragment"
         android:label="fragment_on_board_pager"
         tools:layout="@layout/fragment_on_board_pager" />
 
     <fragment
         android:id="@+id/noteFragment"
-        android:name="com.example.notesapk.ui.fragment.note.NoteFragment"
+        android:name="com.example.notesapk.view.ui.fragment.note.NoteFragment"
         android:label="fragment_note"
         tools:layout="@layout/fragment_note" >
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/noteDetailFragment"
-        android:name="com.example.notesapk.ui.fragment.note.NoteDetailFragment"
+        android:name="com.example.notesapk.view.ui.fragment.note.NoteDetailFragment"
         android:label="fragment_note_detail"
         tools:layout="@layout/fragment_note_detail" >
         <argument android:name="noteId"
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/authFragment"
-        android:name="com.example.notesapk.ui.fragment.singin.AuthFragment"
+        android:name="com.example.notesapk.view.ui.fragment.singin.AuthFragment"
         android:label="fragment_auth"
         tools:layout="@layout/fragment_auth">
         <action

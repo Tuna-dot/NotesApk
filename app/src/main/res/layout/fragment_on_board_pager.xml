@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:paddingHorizontal="16dp"
-    tools:context=".ui.fragment.onboard.OnBoardPagerFragment">
+    tools:context=".view.ui.fragment.onboard.OnBoardPagerFragment">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_animation"
@@ -23,12 +23,11 @@
         android:id="@+id/txtOnBoardTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Удобство"
+        android:text="@string/onBoarPager_title"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold" />
-
 
     <TextView
         android:id="@+id/txtOnBoardDescription"
@@ -37,7 +36,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
         android:maxLines="3"
-        android:text="Создавайте заметки в два клика! Записывайте мысли, идеи и важные задачи мгновенно."
+        android:text="@string/onBoardPager_description"
         android:textAlignment="center"
         android:textColor="@color/onBoard_text_color"
         android:textSize="18sp" />

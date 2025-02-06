@@ -6,21 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:animateLayoutChanges="true"
     android:background="@color/onBoard_background"
-    tools:context=".ui.fragment.onboard.OnBoardFragment">
+    tools:context=".view.ui.fragment.onboard.OnBoardFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    
+
     <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         android:id="@+id/dotsIndicator"
         app:dotsColor="@color/gray"
         app:selectedDotColor="@color/onBoard_txt"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="199dp"
         app:dotsSize="10dp"
         app:dotsSpacing="6dp"
         app:dotsCornerRadius="4dp"
@@ -33,7 +31,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Пропустить"
+        android:text="@string/onBoard_skip"
         android:textColor="@color/onBoard_txt"
         android:textSize="15sp" />
 
@@ -42,24 +40,24 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"
         android:layout_marginTop="60dp"
-        android:text="Notes"
+        android:text="@string/onBoard_title"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
-    
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="230dp"
-        android:layout_height="58dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/btn_skip"
-        android:text="Начать"
+        android:text="@string/onBoard_start"
         android:textColor="@color/white"
         android:textSize="21sp"
         android:textStyle="bold"
         />
-
 
 </FrameLayout>

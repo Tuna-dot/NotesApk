@@ -159,7 +159,7 @@ class NoteDetailFragment : Fragment(), DetailNoteContract.View {
                 alertDialog.dismiss()
             }
             val greenColor = dialogView.findViewById<View>(R.id.color_green).setOnClickListener {
-                selectedColor = Color.rgb(153, 255, 153)
+                selectedColor = Color.rgb(153, 255, 153 )
                 alertDialog.dismiss()
             }
             val blueColor = dialogView.findViewById<View>(R.id.color_blue).setOnClickListener {

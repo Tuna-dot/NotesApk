@@ -51,7 +51,7 @@
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:layout_marginVertical="1dp"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="120dp"
             android:src="@drawable/menu_color" />
 
         <TextView

@@ -51,5 +51,4 @@
             android:textSize="10sp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
 </androidx.cardview.widget.CardView>

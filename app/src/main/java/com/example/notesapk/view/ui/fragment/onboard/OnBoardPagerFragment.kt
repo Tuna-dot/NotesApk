@@ -30,7 +30,7 @@ class OnBoardPagerFragment : Fragment() {
         when(requireArguments().getInt(ARG_POSITION)){
             0 -> {
                 lottieAnimation.setAnimation(R.raw.animation)
-                txtOnBoardTitle.text = "Удобство"
+                txtOnBoardTitle.text = "Удобств"
                 txtOnBoardDescription.text = "Создавайте заметки в два клика! Записывайте мысли, идеи и важные задачи мгновенно."
             }
             1 -> {

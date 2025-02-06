@@ -2,4 +2,20 @@
     <string name="app_name">NotesApk</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onBoard_title">Notes</string>
+    <string name="onBoard_start">Начать</string>
+    <string name="onBoard_skip">Пропустить</string>
+    <string name="onBoarPager_title">Удобство</string>
+    <string name="onBoardPager_description">Создавайте заметки в два клика! Записывайте мысли, идеи и важные задачи мгновенно.</string>
+    <string name="auth_text">Авторизация</string>
+    <string name="auth_btn">Sign in with Google</string>
+    <string name="alert_text">Поменять цвет</string>
+    <string name="alert2_text">Удалить заметку?</string>
+    <string name="alert2_negative_btn">Отмена</string>
+    <string name="alert2_positive_btn">Удалить</string>
+    <string name="note_text">Все заметки</string>
+    <string name="note_search">Поиск заметок</string>
+    <string name="noteDetail_title">Введите зоголовок</string>
+    <string name="noteDetail_description">Введите текст</string>
+    <string name="noteDetail_ready">Готово</string>
 </resources>

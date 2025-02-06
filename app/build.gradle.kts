@@ -53,16 +53,21 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Навигация
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+    //дотс индикатор
     implementation (libs.dotsindicator)
-
+    //лоти анимации
     implementation (libs.lottie)
-    
+    //База данных Room
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
+    //Firebase база данных
     implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
     implementation("com.google.firebase:firebase-analytics")
+    //Авторизация в Firebase
     implementation("com.google.android.gms:play-services-auth:20.7.0")
     implementation("com.google.firebase:firebase-auth")
     implementation ("com.firebaseui:firebase-ui-auth:8.0.2")

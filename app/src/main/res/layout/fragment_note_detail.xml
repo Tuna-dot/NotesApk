@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/onBoard_background"
-    tools:context=".ui.fragment.note.NoteDetailFragment">
+    tools:context=".view.ui.fragment.note.NoteDetailFragment">
 
     <LinearLayout
         android:id="@+id/linearl_layout"
@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:padding="5dp"
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +51,7 @@
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:layout_marginVertical="1dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="140dp"
             android:src="@drawable/menu_color" />
 
         <TextView
@@ -58,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Готово"
+            android:text="@string/noteDetail_ready"
             android:textColor="@color/onBoard_txt"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -71,7 +72,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
-        android:hint="Введите зоголовок"
+        android:hint="@string/noteDetail_title"
         android:textAlignment="viewStart"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -80,7 +81,6 @@
         app:layout_constraintTop_toBottomOf="@id/linearl_layout" />
 
     <FrameLayout
-
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="20dp"
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:hint="Введите текст"
+            android:hint="@string/noteDetail_description"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="12sp" />
